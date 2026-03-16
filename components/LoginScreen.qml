@@ -305,6 +305,8 @@ Item {
                     enabled: loginScreen.state === "normal"
                     visible: loginScreen.userNeedsPassword || !loginScreen.foundUsers
                     icon: Config.getIcon(Config.passwordInputIcon)
+                    eyeIconCl: Config.getIcon("eye-cl")
+                    eyeIconO: Config.getIcon("eye-o")
                     placeholder: (textConstants && textConstants.password) ? textConstants.password : "Password"
                     isPassword: true
                     splitBorderRadius: true
